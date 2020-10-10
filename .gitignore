@@ -1,0 +1,23 @@
+# Compiled source files
+*.o
+*.pyc
+*.db
+*.swp
+*._*
+*.db
+*.log
+doxygen/
+
+# local env files
+.env.local
+.env.*.local
+
+# Editor directories and files
+.DS_Store
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

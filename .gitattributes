@@ -1,0 +1,97 @@
+###############################################################################
+# attribute       # Checkin behavior # Checkout behavior
+###############################################################################
+# text            # Normalized to LF # Convert to native line endings
+# [text] eol=crlf # Normalized to LF # Convert to CRLF
+# [text] eol=lf   # Normalized to LF # Convert to LF
+# -text or binary # No conversion    # No conversion
+# text=auto       # Like "text" if text file according to git, otherwise, like "binary"
+# unspecified     # Fall back to core.autocrlf setting of local environment
+###############################################################################
+# core.autocrlf
+#   false: same as binary
+#   true:  same as eol=crlf
+#   input: same as eol=lf
+
+###############################################################################
+# Set default behavior to automatically normalize line endings.
+###############################################################################
+* text=auto
+
+*.html       text diff=html
+*.css        text
+*.js         eol=lf
+*.jsx        eol=lf
+*.vue        eol=lf
+*.config     text
+*.xml        text
+*.txt        text
+*.sql        text
+*.md         text
+*.php        text diff=php
+*.pl         eol=lf
+*.py         text diff=python
+*.rb         text diff=ruby
+*.yaml       eol=lf
+*.yml        eol=lf
+*.json       eol=lf
+*.ini        eol=lf
+*.env        eol=lf
+*.toml       eol=lf
+*.sh         eol=lf
+*.conf       eol=lf
+
+## DOCKER
+*.dockerignore    text
+Dockerfile        text
+
+## DOCUMENTATION
+*.ipynb      text
+*.markdown   text
+*.md         text
+*.mdwn       text
+*.mdown      text
+*.mkd        text
+*.mkdn       text
+*.mdtxt      text
+*.mdtext     text
+*.txt        text
+AUTHORS      text
+CHANGELOG    text
+CHANGES      text
+CONTRIBUTING text
+COPYING      text
+copyright    text
+*COPYRIGHT*  text
+INSTALL      text
+license      text
+LICENSE      text
+NEWS         text
+readme       text
+*README*     text
+TODO         text
+
+## TEMPLATES
+*.dot        text
+*.ejs        text
+*.haml       text
+*.handlebars text
+*.hbs        text
+*.hbt        text
+*.jade       text
+*.latte      text
+*.mustache   text
+*.njk        text
+*.phtml      text
+*.tmpl       text
+*.tpl        text
+*.twig       text
+
+## LINTERS
+.csslintrc    text
+.eslintrc     text
+.htmlhintrc   text
+.jscsrc       text
+.jshintrc     text
+.jshintignore text
+.stylelintrc  text
